@@ -1,0 +1,205 @@
+// Site colours:
+$cashmere: #e8caab;
+$pewter: #91a99c;
+$dark-pewter: #536b5e;
+$lily: #d4b1c5;
+$voodoo: #503554;
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* unvisited link */
+a:link {
+    color: $voodoo;
+}
+
+/* visited link */
+a:visited {
+    color: $voodoo;
+}
+
+/* mouse over link */
+a:hover {
+    color: $lily;
+}
+
+/* selected link */
+a:active {
+    color: $lily;
+}
+
+
+
+
+.nav {
+    width: 50vw;
+    position: relative;
+    left: 25%;
+    // margin-top: -4%;
+    // background: $cashmere;
+    // box-shadow: 0 8px 32px 0 $cashmere;
+    // backdrop-filter: blur(22px);
+    // -webkit-backdrop-filter: blur(11.5px);
+    // border-radius: 30px;
+
+    ul {
+
+        font-size: 0.8rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 12vh;
+        padding: 0;
+
+        li {
+            // background-color: $voodoo;
+            color: $voodoo;
+            padding: 2%;
+            border-radius: 50px;
+            margin: -1%;
+            list-style-type: none;
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.intro {
+    height: 80vh;
+}
+
+.bio {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60vh;
+    margin: 0 10% 0 10%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .img {
+        background-image: url('./assets/images/WDFT_-_Jenn_Blunt.jpg');
+        height: 40vh;
+        width: 40vh;
+        background-size: cover;
+        border-radius: 250px;
+        border: 3px solid $pewter;
+    }
+
+    // .img:hover {
+    //     background-image: url('./assets/jenn-piece.jpg');
+    // }
+
+    h1 {
+        color: $dark-pewter;
+        font-size: 2.5rem;
+        margin-top: -1%;
+    }
+
+    .bio_text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 40vw;
+        color: $dark-pewter;
+        font-size: 1.5rem;
+        // line-height: 1.2rem;
+    }
+
+    button {
+        padding: 2%;
+        border-radius: 25px;
+        border: solid 1px $cashmere;
+        background-color: $cashmere;
+        color: $voodoo;
+        font-size: 1rem;
+
+    }
+
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-card {
+    display: flex;
+    margin: 3%;
+    height: 50vh;
+
+    img {
+        height: 40vh;
+
+        border: solid 40px $pewter;
+    }
+
+    .mobile-version {
+        height: 30vh;
+        z-index: 100;
+        border: none;
+        position: relative;
+        right: 50%;
+        left: 50%;
+    }
+
+    .project-card__text {
+        flex-direction: column;
+        width: 50vw;
+        margin-top: 10%
+    }
+
+    .project_tags {
+        color: #578372;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+}
+
+.project_button {
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(11.5px);
+    border-radius: 30px;
+    padding: 3%;
+    font-size: 1rem;
+    border: none;
+    margin-top: 2vh;
+    background-color: $pewter;
+}
+
+.mole-game {
+    background-color: #503554;
+    height: 50vh;
+    width: 50vh;
+    position: relative;
+    left: 30%;
+
+    margin: 5%;
+}
+
+.education {
+    display: flex;
+    // border-radius: 30px;
+    background-color: $cashmere;
+    padding: 2vw;
+
+    .edu_card {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        margin: 3vw;
+        // border-radius: 30px;
+        padding: 3%;
+        // box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+
+    }
+}
