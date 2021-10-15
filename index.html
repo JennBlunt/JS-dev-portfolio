@@ -37,10 +37,9 @@
                 <H1>Hiya! I'm Jenn 👋</H1>
                 <p>Junior Web Developer based in Toronto, with a growth mentality and thrives in collaborative settings.
                 </p>
-                <p>
-                    Random Jenn fact: Phasellus finibus odio nisl, non vulputate elit bibendum id. Pellentesque at suscipit mi, a blandit leo.
-                </p>
-                <button>Get a new fact</button>
+                <h2>Here's a few facts to get to know Jenn better:</h2>
+                <p id='jenn-fact'>If Jenn had a super power she would want to be fluent in all languages (human and machine).</p>
+                <button id='show-fact'>Get a new fact</button>
             </div>
         </div>
 
@@ -50,22 +49,19 @@
     </section>
 
     <section id='projects' class="projects">
-        <div>
+        <div id='heading'>
             <h2>Projects 👩🏼‍💻</h2>
         </div>
         <div class="card-contaner">
             <div class="project-card">
                 <img src="./assets/projects/to-puppr-desktop.png" alt="">
                 <!-- <img class='mobile-version' src="./assets/projects/IMG_C0CBF052FE7B-1.jpeg" alt=""> -->
-                <!-- <div class="project-card__text">
-                            <p>Phasellus finibus odio nisl, non vulputate elit bibendum id. Pellentesque at suscipit mi, a blandit leo.
-                                Etiam viverra bibendum mi, et lobortis enim posuere nec</p>
-                            <p>Phasellus finibus odio nisl, non vulputate elit bibendum id. Pellentesque at suscipit mi, a blandit leo.
-                                Etiam viverra bibendum mi, et lobortis enim posuere nec</p>
-                            <h4 class="project_tags">JavaScript | Css | HTML | Dom Manipulation</h4>
-                            <button class='button project_button'>Link</button>
-                            <button class='button project_button'>GitHub</button>
-                        </div> -->
+                <div class="project-card__text hide">
+                    <p>A quick fun app to see how common a dog breed or name is in TO. Data from the City of Toronto 2020</p>
+                    <h4 class="project_tags">JavaScript | Css | HTML | Dom Manipulation</h4>
+                    <button class='button project_button'>Link</button>
+                    <button class='button project_button'>GitHub</button>
+                </div>
             </div>
 
             <div class="project-card">
@@ -117,28 +113,39 @@
                             </div> -->
             </div>
         </div>
+        <div class="top">
+            <a href="#nav" class="top">🔝</a>
+        </div>
 
-        <a href="#nav" class="home">🔝</a>
     </section>
 
     <section class="tools">
-        <h2>Skills and Tools</h2>
-        <div class='logos'>
-            <img src="./assets/logos/js-brands.svg" alt="">
-            <img src="./assets/logos/html5-brands.svg" alt="">
-            <img src="./assets/logos/css3-alt-brands.svg" alt="">
-            <img src="./assets/logos/react-brands.svg" alt="">
-            <img src="./assets/logos/node-js-brands.svg" alt="">
-            <img src="./assets/logos/git-alt-brands.svg" alt="">
-            <img src="./assets/logos/sass-brands.svg" alt="">
-            <img src="./assets/logos/shopify-brands.svg" alt="">
+        <div id='heading'>
+            <h2>Tools and Technologies ⚙️</h2>
         </div>
-        <a href="#nav" class="home">🔝</a>
+
+        <div class='logos'>
+            <img src="./assets/logos/js-brands.svg" alt="JavaScript">
+            <img src="./assets/logos/html5-brands.png" alt="HTML5">
+            <img src="./assets/logos/CSS3_logo.png" alt="CSS3">
+            <img src="./assets/logos/react-brands.svg" alt="React">
+            <img src="./assets/logos/node-js-brands.svg" alt="Node.js">
+            <img src="./assets/logos/git-alt-brands.svg" alt="Git">
+            <img src="./assets/logos/sass-brands.svg" alt="Sass">
+            <img src="./assets/logos/netlify-logo.png" alt="Netlify">
+            <img src="./assets/logos/cib-adobe-photoshop.png" alt="Adobe Photoshop">
+            <img src="./assets/logos/Firebase.png" alt="Firebase">
+            <img src="./assets/logos/liquid-logo.png" alt="Liquid">
+        </div>
+        <!-- <a href="#nav" class="top">🔝</a> -->
     </section>
 
 
-    <section id='education' class="education">
-        <h2>Education 🎓</h2>
+    <!-- <section id='education' class="education">
+        <div id='heading'>
+            <h2>Education 🎓</h2>
+        </div>
+
         <div class='edu_card'>
             <h3>BrainStation</h3>
             <H4>Diploma - Full Stack Web Development</H4>
@@ -154,7 +161,40 @@
             <H4>Diploma - Applied Photography</H4>
             <p>2004</p>
         </div>
-        <a href="#nav" class="home">🔝</a>
+        <a href="#nav" class="top">🔝</a>
+    </section> -->
+
+    <section class="email">
+        <div class='hello'>
+            <h1>Say Hello 👋</h1>
+            <p>I like mail, and so does Hank!</p>
+        </div>
+        <form name="contact" method="POST" data-netlify="true">
+            <p>
+                <input placeholder='Name:' type="text" name="name" />
+
+            </p>
+            <p>
+                <input placeholder='Email:' type="email" name="email" />
+
+            </p>
+
+            <p>
+                <textarea placeholder='Message:' name="message"></textarea>
+
+            </p>
+            <div class='feild '>
+                <div data-netlify-recaptcha="true"></div>
+            </div>
+            <p>
+                <button class='email-send' type="submit">Send 📨</button>
+            </p>
+
+        </form>
+
+    </section>
+    <section class='footer'>
+        <h3>© 2021 Jenn Blunt Web Development</h3>
     </section>
     <script src=script.js></script>
 </body>

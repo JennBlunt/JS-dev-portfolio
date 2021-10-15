@@ -57,8 +57,29 @@ a:active {
   font-size: 1.6rem;
 }
 
+#heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0 3vw 3vw 0;
+  font-size: 2rem;
+}
+
 .intro {
-  height: 80vh;
+  height: 90vh;
+  margin-top: 5vh;
 }
 
 .bio {
@@ -87,10 +108,18 @@ a:active {
   border: 3px solid #91a99c;
 }
 
+.bio .img:hover {
+  background-image: url("./assets/images/jenn-and-hank.JPG");
+}
+
 .bio h1 {
   color: #536b5e;
   font-size: 2.5rem;
   margin-top: -1%;
+}
+
+.bio h2 {
+  font-size: 1.4rem;
 }
 
 .bio .bio_text {
@@ -109,6 +138,12 @@ a:active {
   font-size: 1.5rem;
 }
 
+.bio #jenn-fact {
+  width: 40vw;
+  height: 5vh;
+  margin: 0;
+}
+
 .bio button {
   padding: 2%;
   border-radius: 25px;
@@ -116,16 +151,23 @@ a:active {
   background-color: #e8caab;
   color: #503554;
   font-size: 1rem;
+  margin-top: 3vh;
 }
 
 .projects {
+  background-color: #91a99c;
+}
+
+.card-contaner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
 }
 
 .project-card {
@@ -138,26 +180,11 @@ a:active {
 
 .project-card img {
   height: 40vh;
-  border: solid 40px #91a99c;
   border-radius: 15px;
 }
 
-.project-card .mobile-version {
-  height: 30vh;
-  z-index: 100;
-  border: none;
-  position: relative;
-  right: 50%;
-  left: 50%;
-}
-
-.project-card .project-card__text {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 50vw;
-  margin-top: 10%;
+.project-card .hide {
+  display: none;
 }
 
 .project-card .project_tags {
@@ -197,6 +224,11 @@ a:active {
   width: 200px;
 }
 
+.tools {
+  height: 40vh;
+  margin-top: 10vh;
+}
+
 .tools .logos {
   width: 100vw;
   display: -webkit-box;
@@ -204,6 +236,15 @@ a:active {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5vh 0 10vh 0;
 }
 
 .tools .logos img {
@@ -217,6 +258,7 @@ a:active {
   display: flex;
   background-color: #e8caab;
   padding: 2vw;
+  margin-top: 10vh;
 }
 
 .education .edu_card {
@@ -230,5 +272,100 @@ a:active {
   background-color: white;
   margin: 3vw;
   padding: 3%;
+}
+
+.email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10vh;
+  padding-bottom: 10vh;
+  background-color: #e8caab;
+}
+
+.email .hello {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.email input,
+.email textarea {
+  width: 30vw;
+  font-size: 1.2rem;
+  border: none;
+  border: 1px solid #d4b1c5;
+  border-radius: 5px;
+  padding: 3%;
+}
+
+.email textarea {
+  height: 12vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.email .email-send {
+  padding: 2% 5% 2% 5%;
+  border-radius: 25px;
+  border: none;
+  background-color: #503554;
+  color: #d4b1c5;
+  font-size: 1rem;
+}
+
+.email .email-send ::-webkit-input-placeholder {
+  margin: 5px;
+}
+
+.email .email-send :-ms-input-placeholder {
+  margin: 5px;
+}
+
+.email .email-send ::-ms-input-placeholder {
+  margin: 5px;
+}
+
+.email .email-send ::placeholder {
+  margin: 5px;
+}
+
+.email ::-webkit-input-placeholder {
+  color: #503554;
+}
+
+.email :-ms-input-placeholder {
+  color: #503554;
+}
+
+.email ::-ms-input-placeholder {
+  color: #503554;
+}
+
+.email ::placeholder {
+  color: #503554;
+}
+
+.footer {
+  text-align: center;
+  font-size: 1rem;
+  background-color: #e8caab;
+  color: #536b5e;
+  padding: 3vh;
 }
 /*# sourceMappingURL=style.css.map */

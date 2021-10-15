@@ -8,6 +8,7 @@ $voodoo: #503554;
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 a {
@@ -69,8 +70,22 @@ a:active {
     }
 }
 
+#heading {
+    display: flex;
+    justify-content: center;
+}
+
+.top {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 3vw 3vw 0;
+    font-size: 2rem;
+}
+
+//  INTRO
 .intro {
-    height: 80vh;
+    height: 90vh;
+    margin-top: 5vh;
 }
 
 .bio {
@@ -92,14 +107,18 @@ a:active {
         border: 3px solid $pewter;
     }
 
-    // .img:hover {
-    //     background-image: url('./assets/jenn-piece.jpg');
-    // }
+    .img:hover {
+        background-image: url('./assets/images/jenn-and-hank.JPG');
+    }
 
     h1 {
         color: $dark-pewter;
         font-size: 2.5rem;
         margin-top: -1%;
+    }
+
+    h2 {
+        font-size: 1.4rem;
     }
 
     .bio_text {
@@ -112,6 +131,12 @@ a:active {
         // line-height: 1.2rem;
     }
 
+    #jenn-fact {
+        width: 40vw;
+        height: 5vh;
+        margin: 0;
+    }
+
     button {
         padding: 2%;
         border-radius: 25px;
@@ -119,16 +144,29 @@ a:active {
         background-color: $cashmere;
         color: $voodoo;
         font-size: 1rem;
-
+        margin-top: 3vh;
     }
 
 }
 
+
+
+// PROJECTS
+
 .projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    background-color: $pewter;
 }
+
+.card-contaner {
+    display: flex;
+    // flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    // padding: 5vh 10vw 5vh 10vw;
+}
+
+
 
 .project-card {
     display: flex;
@@ -138,24 +176,13 @@ a:active {
 
     img {
         height: 40vh;
-
-        border: solid 40px $pewter;
+        // border: solid 40px $pewter;
         border-radius: 15px;
     }
 
-    .mobile-version {
-        height: 30vh;
-        z-index: 100;
-        border: none;
-        position: relative;
-        right: 50%;
-        left: 50%;
-    }
+    .hide {
+        display: none;
 
-    .project-card__text {
-        flex-direction: column;
-        width: 50vw;
-        margin-top: 10%
     }
 
     .project_tags {
@@ -178,6 +205,8 @@ a:active {
     background-color: $pewter;
 }
 
+//  GAME
+
 .game-board {
     width: 606px;
     height: 606px;
@@ -192,13 +221,20 @@ a:active {
     width: 200px;
 }
 
+// TOOLS
+
 .tools {
-    // width: 50vw;
+    height: 40vh;
+    margin-top: 10vh;
 
     .logos {
         width: 100vw;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin: 5vh 0 10vh 0;
 
         img {
             height: 8vh;
@@ -207,11 +243,14 @@ a:active {
     }
 }
 
+// EDUCATION
+
 .education {
     display: flex;
     // border-radius: 30px;
     background-color: $cashmere;
     padding: 2vw;
+    margin-top: 10vh;
 
     .edu_card {
         display: flex;
@@ -223,4 +262,69 @@ a:active {
         // box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 
     }
+}
+
+
+//  EMAIL
+
+
+.email {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    padding-bottom: 10vh;
+    background-color: $cashmere;
+
+    .hello {
+        display: flex;
+        flex-direction: column;
+        // align-content: center;
+        align-items: center;
+    }
+
+    input,
+    textarea {
+        width: 30vw;
+        font-size: 1.2rem;
+        border: none;
+        border: 1px solid $lily;
+        border-radius: 5px;
+        padding: 3%;
+    }
+
+    textarea {
+        height: 12vh;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .email-send {
+        padding: 2% 5% 2% 5%;
+        border-radius: 25px;
+        border: none;
+        background-color: $voodoo;
+        color: $lily;
+        font-size: 1rem;
+
+        ::placeholder {
+            margin: 5px;
+        }
+
+    }
+
+    ::placeholder {
+        color: $voodoo;
+
+    }
+
+}
+
+.footer {
+    text-align: center;
+    font-size: 1rem;
+    background-color: $cashmere;
+    color: $dark-pewter;
+    padding: 3vh;
+
 }
