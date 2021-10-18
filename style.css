@@ -28,9 +28,10 @@ a:active {
 }
 
 .nav {
-  width: 50vw;
-  position: relative;
-  left: 25%;
+  width: 100vw;
+  position: fixed;
+  top: -2%;
+  background-color: white;
 }
 
 .nav ul {
@@ -38,14 +39,13 @@ a:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   height: 12vh;
-  padding: 0;
+  padding: 0 20% 0 20%;
 }
 
 .nav ul li {
@@ -66,20 +66,9 @@ a:active {
           justify-content: center;
 }
 
-.top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin: 0 3vw 3vw 0;
-  font-size: 2rem;
-}
-
 .intro {
   height: 90vh;
-  margin-top: 5vh;
+  margin-top: 15vh;
 }
 
 .bio {

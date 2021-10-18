@@ -39,24 +39,20 @@ a:active {
 
 
 .nav {
-    width: 50vw;
-    position: relative;
-    left: 25%;
-    // margin-top: -4%;
-    // background: $cashmere;
-    // box-shadow: 0 8px 32px 0 $cashmere;
-    // backdrop-filter: blur(22px);
-    // -webkit-backdrop-filter: blur(11.5px);
-    // border-radius: 30px;
+    width: 100vw;
+    position: fixed;
+    top: -2%;
+    background-color: white;
 
     ul {
 
         font-size: 0.8rem;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
         height: 12vh;
-        padding: 0;
+        padding: 0 20% 0 20%;
+
 
         li {
             // background-color: $voodoo;
@@ -75,17 +71,10 @@ a:active {
     justify-content: center;
 }
 
-.top {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0 3vw 3vw 0;
-    font-size: 2rem;
-}
-
 //  INTRO
 .intro {
     height: 90vh;
-    margin-top: 5vh;
+    margin-top: 15vh;
 }
 
 .bio {

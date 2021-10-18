@@ -3,8 +3,8 @@ let showFact = document.getElementById("show-fact");
 
 let facts = [
     'Jenn has a strong dislike for the word Penultimate.',
-    'Jenn is allergic to coffee, but not in a can’t-be-in-the-same-room type of allergy.',
-    'Hank made Jenn realize she’s a dog person, not a puppy person.',
+    'If Jenn had a super power she would want to be fluent in all languages.',
+    'Jenn is not very good a networking, so she made a Resume Tshirt to help.',
     'In grade 4, Jenn wrote a speech on procrastination, after leaving the assignment to the last minute.',
     'Jenn loves tea, which is handy given her allergy.'
 ]
