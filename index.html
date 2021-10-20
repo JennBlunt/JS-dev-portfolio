@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">
 
     <title>Jenn Blunt - Web Developer</title>
 </head>
@@ -41,9 +44,8 @@
                 <p id='jenn-fact'>Jenn is allergic to coffee, but not in a can’t-be-in-the-same-room way.</p>
                 <button id='show-fact'>Get a new fact</button>
             </div>
+
         </div>
-
-
 
     </section>
 
@@ -53,65 +55,97 @@
         </div>
         <div class="card-contaner">
             <div class="project-card">
-                <img src="./assets/projects/to-puppr-desktop.png" alt="">
-                <!-- <img class='mobile-version' src="./assets/projects/IMG_C0CBF052FE7B-1.jpeg" alt=""> -->
-                <div class="project-card__text hide">
-                    <p>A quick fun app to see how common a dog breed or name is in TO. Data from the City of Toronto 2020</p>
+                <img class='project-image' src="./assets/projects/to-puppr-desktop.png" alt="">
+
+                <details class="project-details">
+                    <summary>Toronto Puppr</summary>
+                    <p>A quick, fun app to see how common a dog breed or name is in TO. Data from the City of Toronto 2020</p>
                     <h4 class="project_tags">JavaScript | Css | HTML | Dom Manipulation</h4>
-                    <button class='button project_button'>Link</button>
-                    <button class='button project_button'>GitHub</button>
-                </div>
+                    <button class='button project_button'>
+                        <a href='https://toronto-puppr-by-jenn.netlify.app/' target=”_blank”>See it Live</a>
+                    </button>
+
+                    <button class='button project_button'>
+                        <a href='https://github.com/JennBlunt/Toronto-Puppr' target=”_blank”>GitHub</a>
+                    </button>
+                </details>
             </div>
 
             <div class="project-card">
-                <img src="./assets/projects/mile1.png" alt="">
-                <!-- <div class="project-card__text">
-                            <p>Phasellus finibus odio nisl, non vulputate elit bibendum id. Pellentesque at suscipit mi, a blandit leo.
-                                Etiam viverra bibendum mi, et lobortis enim posuere nec</p>
-                            <p>Phasellus finibus odio nisl, non vulputate elit bibendum id. Pellentesque at suscipit mi, a blandit leo.
-                                Etiam viverra bibendum mi, et lobortis enim posuere nec</p>
-                            <h4 class="project_tags">JavaScript | Css | HTML | Dom Manipulation</h4>
-                            <button class='button project_button'>Link</button>
-                            <button class='button project_button'>GitHub</button>
-                        </div> -->
+                <img class='project-image' src="./assets/projects/mile1.png" alt="">
+
+                <details class="project-details">
+                    <summary>Mile 1 Redesign</summary>
+                    <p>Website design and built UI/UX for all client-facing pages while ensuring efficient integration with
+                        existing Ruby programming.</p>
+                    <h4 class="project_tags">JavaScript | CSS3 | HTML5 </h4>
+                    <button class='button project_button'>
+                        <a href='https://mile1.ca/' target=”_blank”>See it Live</a>
+                    </button>
+                    <button class='button project_button'>
+                        <a href='https://github.com/JennBlunt/Mile1-redesign' target=”_blank”>GitHub</a>
+                    </button>
+
+                </details>
             </div>
+
+
             <div class="project-card">
-                <img src="./assets/projects/rocket-agency-juno.png" alt="">
-                <!-- <div class="project-card__text">
-                            <p>Phasellus finibus odio nisl, non vulputate elit bibendum id. Pellentesque at suscipit mi, a blandit leo.
-                                Etiam viverra bibendum mi, et lobortis enim posuere nec</p>
-                            <p>Phasellus finibus odio nisl, non vulputate elit bibendum id. Pellentesque at suscipit mi, a blandit leo.
-                                Etiam viverra bibendum mi, et lobortis enim posuere nec</p>
-                            <h4 class="project_tags">JavaScript | Css | HTML | Dom Manipulation</h4>
-                            <button class='button project_button'>Link</button>
-                            <button class='button project_button'>GitHub</button>
-                        </div> -->
+                <img class='project-image' src="./assets/projects/rocket-agency-juno.png" alt="">
+
+                <details class="project-details">
+                    <summary>Rocket Agency (Juno)</summary>
+                    <p>A WordPress site built as art of the Juno College Custom Theme course.
+                    </p>
+                    <h4 class="project_tags">PHP | JavaScript | CSS3 | HTML5 </h4>
+                    <button class='button project_button'>
+                        <a href='http://rocket-agency.local/?cache-buster=843' target=”_blank”>See it Live</a>
+                    </button>
+                    <button class='button project_button'>
+                        <a href='https://github.com/JennBlunt/WordPress-RocketVision' target=”_blank”>GitHub</a>
+                    </button>
+                </details>
             </div>
+
             <div class="project-card">
                 <img src="./assets/projects/candlerings-juno.png" alt="">
-                <!-- <div class="project-card__text">
-                            <p>Phasellus finibus odio nisl, non vulputate elit bibendum id. Pellentesque at suscipit mi, a blandit leo.
-                                Etiam viverra bibendum mi, et lobortis enim posuere nec</p>
-                            <p>Phasellus finibus odio nisl, non vulputate elit bibendum id. Pellentesque at suscipit mi, a blandit leo.
-                                Etiam viverra bibendum mi, et lobortis enim posuere nec</p>
-                            <h4 class="project_tags">JavaScript | Css | HTML | Dom Manipulation</h4>
-                            <button class='button project_button'>Link</button>
-                            <button class='button project_button'>GitHub</button>
-                        </div> -->
+
+
+                <details class="project-details">
+                    <summary>CandleRings (Juno)</summary>
+                    <p>A Shopify site built as art of the Juno College Custom Theme course.
+                    </p>
+                    <h4 class="project_tags"> Liquid | CSS3 | HTML5 </h4>
+                    <button class='button project_button'>
+                        <a href='https://candlerings-jenn.myshopify.com/' target=”_blank”>See it Live</a>
+                    </button>
+                    <button class='button project_button'>
+                        <a href='https://github.com/JennBlunt/Shopify-Juno-CandleRings' target=”_blank”>GitHub</a>
+                    </button>
+                </details>
             </div>
-            <div class="project-card">
+
+
+
+
+
+
+            <div class="project-card" id='last'>
                 <img src="./assets/projects/skauti.png" alt="">
-                <!-- <div class="project-card__text">
-                                <p>Phasellus finibus odio nisl, non vulputate elit bibendum id. Pellentesque at suscipit mi, a blandit leo.
-                                    Etiam viverra bibendum mi, et lobortis enim posuere nec</p>
-                                <p>Phasellus finibus odio nisl, non vulputate elit bibendum id. Pellentesque at suscipit mi, a blandit leo.
-                                    Etiam viverra bibendum mi, et lobortis enim posuere nec</p>
-                                <h4 class="project_tags">JavaScript | Css | HTML | Dom Manipulation</h4>
-                                <button class='button project_button'>Link</button>
-                                <button class='button project_button'>GitHub</button>
-                            </div> -->
+                <details class="project-details">
+                    <summary>SKAUTi (BrainStation)</summary>
+                    <p>SKAUTi was my Capstone project at BrainStation. It's for Photographers and Film Makers to organize images
+                        for location scouting.</p>
+
+                    <h4 class="project_tags">JavaScript | React | CSS3 | HTML5 | Node | Express | Firebase </h4>
+
+                    <button class='button project_button'>
+                        <a href='https://github.com/JennBlunt/Brainstation-Capstone' target=”_blank”>GitHub</a>
+                    </button>
+                </details>
             </div>
-            <!-- <div class="hank">
+        </div>
+        <!-- <div class="hank">
                 <h4>Here's a few other small projects you can check out:</h4>
                 <button>
                     <a href="https://boop-a-hank.netlify.app/">Boop - A - Hank</a>
@@ -134,28 +168,18 @@
 
         <div class='logos'>
             <img class='logo' src="./assets/logos/js-brands.svg" alt="JavaScript">
-            <!-- <p class="text"> </p> -->
             <img class='logo' src="./assets/logos/html5-brands.png" alt="HTML5">
-            <!-- <p class="text"> </p> -->
             <img class='logo' src="./assets/logos/CSS3_logo.png" alt="CSS3">
-            <!-- <p class="text"> </p> -->
             <img class='logo' src="./assets/logos/react-brands.svg" alt="React">
-            <!-- <p id="text"> </p> -->
             <img class='logo' src="./assets/logos/node-js-brands.svg" alt="Node.js">
-            <!-- <p id="text"> </p> -->
             <img class='logo' src="./assets/logos/git-alt-brands.svg" alt="Git">
-            <!-- <p id="text"> </p> -->
             <img class='logo' src="./assets/logos/sass-brands.svg" alt="Sass">
-            <!-- <p id="text"> </p> -->
             <img class='logo' src="./assets/logos/netlify-logo.png" alt="Netlify">
-            <!-- <p id="text"> </p> -->
             <img class='logo' src="./assets/logos/cib-adobe-photoshop.png" alt="Adobe Photoshop">
-            <!-- <p id="text"> </p> -->
             <img class='logo' src="./assets/logos/Firebase.png" alt="Firebase">
-            <!-- <p id="text"> </p> -->
             <img class='logo' src="./assets/logos/liquid-logo.png" alt="Liquid">
-            <!-- <p id="text"> </p> -->
         </div>
+
 
     </section>
 

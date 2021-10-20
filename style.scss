@@ -7,7 +7,8 @@ $voodoo: #503554;
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Didact Gothic', sans-serif;
+
 
 }
 
@@ -39,7 +40,10 @@ a:active {
     color: $lily;
 }
 
-
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
 
 
 .nav {
@@ -47,6 +51,8 @@ a:active {
     position: fixed;
     top: -2%;
     background-color: white;
+    z-index: 100;
+    letter-spacing: 0.3rem;
 
     ul {
 
@@ -70,16 +76,19 @@ a:active {
     }
 }
 
-#heading {
+#heading h2 {
     display: flex;
     justify-content: center;
-    padding: 10vh 0 5vh 0;
+    padding: 10vh 0 0vh 0;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    font-weight: 400;
 }
 
 //  INTRO
 .intro {
     height: 90vh;
-    margin-top: 15vh;
+    margin-top: 20vh;
 }
 
 .bio {
@@ -138,38 +147,12 @@ a:active {
         background-color: $cashmere;
         color: $voodoo;
         font-size: 1rem;
-        margin-top: 3vh;
+        margin-top: 4vh;
     }
 
 }
 
-.hank {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    width: 100vw;
 
-    button {
-        width: 20vw;
-        padding: 2%;
-        border: solid 2px $dark-pewter;
-        color: $dark-pewter;
-        background-color: $pewter
-    }
-
-    a {
-        padding: 10%;
-        font-size: 1.3rem;
-        font-weight: 500;
-        text-decoration: none;
-    }
-
-    a:visited {
-        color: $dark-pewter;
-    }
-}
 
 // PROJECTS
 
@@ -179,38 +162,70 @@ a:active {
 
 .card-contaner {
     display: flex;
-    // flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     width: 100vw;
-    // padding: 5vh 10vw 5vh 10vw;
 }
-
 
 
 .project-card {
     display: flex;
-    margin: 3%;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    margin: 4%;
     height: 50vh;
 
 
     img {
         height: 40vh;
-        // border: solid 40px $pewter;
         border-radius: 15px;
     }
 
-    .hide {
-        display: none;
+    .project-details {
+        position: relative;
+        width: 32vw;
+        text-align: center;
+        top: 5%;
 
+        summary {
+            font-size: 1.3rem;
+            margin-bottom: 2%;
+        }
     }
+
+    details>summary {
+        list-style-type: "☞ ";
+        letter-spacing: 2px;
+    }
+
+    // details>summary::-webkit-details-marker {
+    //     display: none;
+    // }
 
     .project_tags {
         color: #578372;
         font-size: 1.3rem;
         text-align: center;
+        margin: 5px;
     }
+
+    .project_button {
+        margin-top: 5px;
+        width: 8vw;
+    }
+
+    p {
+        margin: 5px;
+    }
+
 }
+
+
+#last {
+    margin-bottom: 18vh;
+}
+
 
 .project_button {
     background: rgba(255, 255, 255, 0.4);
@@ -225,21 +240,6 @@ a:active {
     background-color: $pewter;
 }
 
-//  GAME
-
-.game-board {
-    width: 606px;
-    height: 606px;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #503554;
-}
-
-.square {
-    border: solid 1px black;
-    height: 200px;
-    width: 200px;
-}
 
 // TOOLS
 
