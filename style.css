@@ -33,6 +33,16 @@ h2 {
   font-weight: 600;
 }
 
+button {
+  padding: 2%;
+  border-radius: 25px;
+  border: solid 1px #e8caab;
+  background-color: #e8caab;
+  color: #503554;
+  font-size: 1rem;
+  margin-top: 4vh;
+}
+
 .nav {
   width: 100vw;
   position: fixed;
@@ -123,16 +133,6 @@ h2 {
   margin: 0;
 }
 
-.bio button {
-  padding: 2%;
-  border-radius: 25px;
-  border: solid 1px #e8caab;
-  background-color: #e8caab;
-  color: #503554;
-  font-size: 1rem;
-  margin-top: 4vh;
-}
-
 .projects {
   background-color: #91a99c;
 }
@@ -172,11 +172,14 @@ h2 {
 .project-card details > summary {
   list-style-type: "☞ ";
   letter-spacing: 2px;
+  color: #503554;
 }
 
 .project-card .project_tags {
-  color: #578372;
+  color: #536b5e;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.3rem;
+  font-weight: 500;
   text-align: center;
   margin: 5px;
 }
@@ -195,20 +198,23 @@ h2 {
 }
 
 .project_button {
-  background: rgba(255, 255, 255, 0.4);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(22px);
-  -webkit-backdrop-filter: blur(11.5px);
-  border-radius: 30px;
-  padding: 3%;
+  padding: 2% 5% 2% 5%;
+  border-radius: 25px;
+  background-color: #536b5e;
   font-size: 1rem;
   border: none;
-  margin-top: 2vh;
-  background-color: #91a99c;
+}
+
+.project_button a {
+  color: #e8caab;
 }
 
 .tools {
   height: 40vh;
+}
+
+.tools h2 {
+  color: #d4b1c5;
 }
 
 .tools .logos {
@@ -249,6 +255,10 @@ h2 {
   margin-top: 10vh;
   padding-bottom: 10vh;
   background-color: #e8caab;
+}
+
+.email h2 {
+  color: #503554;
 }
 
 .email .hello {
