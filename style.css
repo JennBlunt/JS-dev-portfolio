@@ -443,9 +443,6 @@ button {
     padding: 2%;
     margin: 0;
   }
-  .mobile-nav li a {
-    padding: 1%;
-  }
   .intro {
     margin-top: 37vh;
   }
@@ -559,6 +556,7 @@ button {
   }
   .mobile-nav summary {
     list-style-type: none;
+    outline: none;
   }
   .mobile-nav ul {
     display: -webkit-box;

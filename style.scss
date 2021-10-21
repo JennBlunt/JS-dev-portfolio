@@ -388,10 +388,6 @@ button {
         li {
             padding: 2%;
             margin: 0;
-
-            a {
-                padding: 1%;
-            }
         }
     }
 
@@ -528,6 +524,7 @@ button {
 
         summary {
             list-style-type: none;
+            outline: none;
         }
 
         ul {
