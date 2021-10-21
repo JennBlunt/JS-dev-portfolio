@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   margin: 0;
   font-family: 'Didact Gothic', sans-serif;
@@ -208,7 +207,6 @@ button {
 }
 
 .project-card details > summary {
-  list-style-type: "☞ ";
   letter-spacing: 2px;
   color: #503554;
 }
@@ -397,6 +395,12 @@ button {
   background-color: #e8caab;
   color: #536b5e;
   padding: 3vh;
+}
+
+@media screen and (min-width: 426px) and (max-width: 1024px) {
+  #mobile-nav {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 325px) and (max-width: 425px) {
