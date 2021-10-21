@@ -417,6 +417,7 @@ button {
     display: -ms-flexbox;
     display: flex;
     position: fixed;
+    z-index: 100;
     padding: 5%;
     color: #503554;
     background-color: white;
@@ -540,6 +541,7 @@ button {
     display: -ms-flexbox;
     display: flex;
     position: fixed;
+    z-index: 100;
     padding: 5%;
     color: #503554;
     background-color: white;

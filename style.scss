@@ -358,6 +358,7 @@ button {
     .mobile-nav {
         display: flex;
         position: fixed;
+        z-index: 100;
         padding: 5%;
         color: $voodoo;
         background-color: white;
@@ -502,6 +503,7 @@ button {
     .mobile-nav {
         display: flex;
         position: fixed;
+        z-index: 100;
         padding: 5%;
         color: $voodoo;
         background-color: white;
