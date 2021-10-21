@@ -8,13 +8,8 @@ $voodoo: #503554;
 body {
     margin: 0;
     font-family: 'Didact Gothic', sans-serif;
-
-
 }
 
-// section {
-//     padding-top: 10vh;
-// }
 
 a {
     text-decoration: none;
@@ -72,9 +67,7 @@ button {
         height: 10vh;
         padding: 0 20% 0 20%;
 
-
         li {
-            // background-color: $voodoo;
             color: $voodoo;
             padding: 2%;
             border-radius: 50px;
@@ -110,6 +103,10 @@ button {
     background-repeat: no-repeat;
     background-size: cover;
 
+    .mobile-bio-img {
+        display: none;
+    }
+
     .img {
         background-image: url('./assets/images/WDFT_-_Jenn_Blunt.jpg');
         height: 45vh;
@@ -140,7 +137,6 @@ button {
         width: 40vw;
         color: $dark-pewter;
         font-size: 1.5rem;
-        // line-height: 1.2rem;
     }
 
     #jenn-fact {
@@ -148,8 +144,6 @@ button {
         height: 5vh;
         margin: 0;
     }
-
-
 
 }
 
@@ -172,11 +166,9 @@ button {
 .project-card {
     display: flex;
     flex-direction: column;
-    // justify-content: center;
     align-items: center;
     margin: 4%;
     height: 50vh;
-
 
     img {
         height: 40vh;
@@ -284,13 +276,11 @@ button {
         // border-radius: 30px;
         padding: 3%;
         // box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-
     }
 }
 
 
 //  EMAIL
-
 
 .email {
     display: flex;
@@ -308,10 +298,7 @@ button {
     .hello {
         display: flex;
         flex-direction: column;
-        // align-content: center;
         align-items: center;
-
-
     }
 
     input,
@@ -340,12 +327,10 @@ button {
         ::placeholder {
             margin: 5px;
         }
-
     }
 
     ::placeholder {
         color: $voodoo;
-
     }
 
 }
@@ -356,5 +341,294 @@ button {
     background-color: $cashmere;
     color: $dark-pewter;
     padding: 3vh;
+}
 
+
+@media screen and (min-width: 325px) and (max-width: 425px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+        position: fixed;
+        padding: 5%;
+        color: $voodoo;
+        background-color: white;
+        width: 100%;
+        font-size: 1.2rem;
+
+        summary {
+            list-style-type: none;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 2%;
+        }
+
+        li {
+            padding: 2%;
+            margin: 0;
+        }
+    }
+
+    .intro {
+        margin-top: 37vh;
+    }
+
+    .bio {
+        // margin-top: 30vh;
+        display: flex;
+        flex-direction: column;
+
+        .img {
+            display: none;
+        }
+
+        .mobile-bio-img {
+            display: flex;
+            height: 25vh;
+            background-size: cover;
+            border-radius: 50%;
+            border: 3px solid $pewter;
+            margin: 5vh;
+        }
+
+        .bio_text {
+            width: 80vw;
+            display: flex;
+
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 1.1rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            #jenn-fact {
+                width: 80vw;
+                height: 7vh;
+            }
+
+            button {
+                padding: 3%;
+            }
+        }
+    }
+
+    #heading h2 {
+        padding-top: 3vh;
+        font-size: 1.5rem;
+        text-align: center;
+        padding-bottom: 2vh;
+    }
+
+    .project-card {
+        // display: flex;
+        // flex-direction: row;
+
+        img {
+            width: 80vw;
+            height: auto;
+        }
+
+        .project-details {
+            width: 85vw;
+        }
+
+        .project_tags {
+            font-size: 1rem;
+        }
+
+        .project_button {
+            width: 30vw;
+            margin: 1%;
+        }
+    }
+
+    .tools {
+        .logos {
+            width: 85vw;
+            margin: 5%;
+
+            img {
+                height: 7vh;
+                padding: 1%;
+            }
+        }
+
+
+    }
+
+    .email {
+
+        input,
+        textarea {
+            width: 75vw;
+        }
+
+        .email-send {
+            margin-top: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 324px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+        position: fixed;
+        padding: 5%;
+        color: $voodoo;
+        background-color: white;
+        width: 100%;
+        font-size: 1.2rem;
+
+        summary {
+            list-style-type: none;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 2%;
+        }
+
+        li {
+            font-size: 1rem;
+            padding: 2%;
+        }
+    }
+
+    .intro {
+        margin-top: 32vh;
+    }
+
+    .bio {
+        // margin-top: 30vh;
+        display: flex;
+        flex-direction: column;
+
+        .img {
+            display: none;
+        }
+
+        .mobile-bio-img {
+            display: flex;
+            height: 25vh;
+            background-size: cover;
+            border-radius: 50%;
+            border: 3px solid $pewter;
+            margin: 5vh;
+        }
+
+        .bio_text {
+            width: 80vw;
+            display: flex;
+
+
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            h2 {
+                font-size: 1.1rem;
+            }
+
+            #jenn-fact {
+                width: 80vw;
+                height: 7vh;
+            }
+
+            button {
+                padding: 3%;
+            }
+        }
+    }
+
+    #heading h2 {
+        padding-top: 3vh;
+        font-size: 1.5rem;
+        text-align: center;
+        padding-bottom: 2vh;
+    }
+
+    .project-card {
+        // display: flex;
+        // flex-direction: row;
+
+        img {
+            width: 80vw;
+            height: auto;
+        }
+
+        .project-details {
+            width: 85vw;
+        }
+
+        .project_tags {
+            font-size: 1rem;
+        }
+
+        .project_button {
+            width: 35vw;
+            margin: 1%;
+            padding: 3%;
+        }
+    }
+
+    .tools {
+        .logos {
+            width: 85vw;
+            margin: 5%;
+
+            img {
+                height: 6vh;
+                padding: 1%;
+            }
+        }
+
+
+    }
+
+    .email {
+
+        input,
+        textarea {
+            width: 72vw;
+        }
+
+        .email-send {
+            margin-top: 0;
+        }
+    }
 }
