@@ -5,6 +5,7 @@ $dark-pewter: #536b5e;
 $lily: #d4b1c5;
 $voodoo: #503554;
 
+
 body {
     margin: 0;
     font-family: 'Didact Gothic', sans-serif;
@@ -346,9 +347,75 @@ button {
 // Mobile Styles
 
 // Tablets
-@media screen and (min-width: 426px) and (max-width: 1024px) {
+@media screen and (min-width: 426px) and (max-width: 1020px) {
     #mobile-nav {
         display: none;
+    }
+
+    #heading h2 {
+        padding-top: 6vh
+    }
+
+    .nav {
+        ul {
+            padding: 0px 5% 0 5%;
+        }
+
+    }
+
+    .bio {
+        display: flex;
+        flex-direction: column;
+        margin-top: 25vh;
+
+        .img {
+            display: none;
+        }
+
+        .mobile-bio-img {
+            display: flex;
+            height: 25vh;
+            background-size: cover;
+            border-radius: 50%;
+            border: 3px solid $pewter;
+            margin: 5vh;
+        }
+
+        .bio_text,
+        #jenn-fact {
+            width: 80vw;
+        }
+    }
+
+    .project-card {
+        height: 55vh;
+
+        .project-details {
+            width: 75vw;
+        }
+
+        .project_tags {
+            font-size: 1.1rem;
+        }
+
+        .project_button {
+            width: 20vw;
+        }
+    }
+
+    .tools {
+        height: 22vh;
+
+        .logos {
+            img {
+                height: 4vh;
+            }
+        }
+    }
+
+    .email input,
+    .email textarea {
+        width: 70vw;
     }
 }
 
@@ -499,6 +566,7 @@ button {
         }
     }
 }
+
 
 //  Small phones
 @media screen and (min-width: 320px) and (max-width: 324px) {

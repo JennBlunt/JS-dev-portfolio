@@ -397,9 +397,64 @@ button {
   padding: 3vh;
 }
 
-@media screen and (min-width: 426px) and (max-width: 1024px) {
+@media screen and (min-width: 426px) and (max-width: 1020px) {
   #mobile-nav {
     display: none;
+  }
+  #heading h2 {
+    padding-top: 6vh;
+  }
+  .nav ul {
+    padding: 0px 5% 0 5%;
+  }
+  .bio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 25vh;
+  }
+  .bio .img {
+    display: none;
+  }
+  .bio .mobile-bio-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 25vh;
+    background-size: cover;
+    border-radius: 50%;
+    border: 3px solid #91a99c;
+    margin: 5vh;
+  }
+  .bio .bio_text,
+  .bio #jenn-fact {
+    width: 80vw;
+  }
+  .project-card {
+    height: 55vh;
+  }
+  .project-card .project-details {
+    width: 75vw;
+  }
+  .project-card .project_tags {
+    font-size: 1.1rem;
+  }
+  .project-card .project_button {
+    width: 20vw;
+  }
+  .tools {
+    height: 22vh;
+  }
+  .tools .logos img {
+    height: 4vh;
+  }
+  .email input,
+  .email textarea {
+    width: 70vw;
   }
 }
 
