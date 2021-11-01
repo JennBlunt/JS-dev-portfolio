@@ -20,6 +20,6 @@ showFact.addEventListener('click', function () {
 });
 
 
-
+console.log('Hi there! Welcome to my portfolio site. This site was built using Vanilla JavaScript, and I am in the process of converting it to React in the coming weeks. Thanks for popping in!');
 
 
